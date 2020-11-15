@@ -1,0 +1,122 @@
+@media (max-width: 400px) {
+    #title {
+        font-size: 45px;
+        margin-top: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #title {
+        font-size: 100px;
+        margin-top: 15%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 736px) {
+    #title {
+        font-size: 75px;
+        margin-top: 30%;
+    }
+}
+
+@media (min-width: 736px) and (max-width: 1200px) {
+    #title {
+        font-size: 85px;
+        margin-top: 15%;
+    }
+}
+
+#title {
+    color: yellowgreen;
+    transform: rotate(0deg);
+    font-family: Consolas, monaco, monospace;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#link {
+    margin-top: 200px;
+    text-align: center;
+    display: grid;
+}
+
+
+#project {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background-color: black;
+    border: 5px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    text-decoration: none;
+}
+
+#about {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background-color: black;
+    border: 5px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    text-decoration: none;
+}
+
+#article {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background-color: black;
+    border: 5px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    text-decoration: none;
+}
+
+#other {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background-color: black;
+    border: 5px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width: 1100px) {
+    #link {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    #link {
+        position: relative;
+        bottom: 25rem;
+    }
+}
+
+@media (min-width: 950px) {
+    #link {
+        position: relative;
+        bottom: 5rem;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 1099px) {
+    #link {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 519px) {
+    #link {
+        grid-template-columns: auto;
+    }
+}
