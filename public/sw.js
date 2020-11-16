@@ -12,23 +12,26 @@ self.addEventListener("message", (event) => {
 
 workbox.core.setCacheNameDetails({
   prefix: 'algorithm-net',
+  suffix: 'v2',
   precache: 'sw-cache'
 })
 
 workbox.precaching.precacheAndRoute([
-    {url: '/index.html',revision: null},
-    {url: '/projects',revision: null},
-    {url: '/projects/projects.css',revision: null},
-    {url: '/global.css',revision: null},
-    {url: '/home.css',revision: null},
-    {url: '/about',revision: null},
-    {url: '/about/about.css',revision: null},
-    {url: '/article',revision: null},
-    {url: 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate',revision: null}
+  { url: '/global.css', revision: null },
+  { url: '/index.html', revision: null },
+  { url: '/home.css', revision: null },
+  { url: '/projects', revision: null },
+  { url: '/projects/projects.css', revision: null },
+  { url: '/me', revision: null },
+  { url: '/me/about.css', revision: null },
+  { url: '/article', revision: null },
+  { url: '/article/article.css', revision: null },
+  { url: 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate', revision: null },
+  { url: '/favicon.ico', revision: null}
 
-  
-  ], {
-  });
-  
+
+], {
+});
+
 
 console.log("hell");
