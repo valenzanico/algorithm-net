@@ -27,7 +27,9 @@ workbox.precaching.precacheAndRoute([
   { url: '/article', revision: null },
   { url: '/article/article.css', revision: null },
   { url: 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate', revision: null },
-  { url: '/favicon.ico', revision: null}
+  { url: '/favicon.ico', revision: null},
+  { url: '/logoalgorithmnet512.png', revision: null},
+  { url: '/sw-manager.js', revision: null}
 
 
 ], {

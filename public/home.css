@@ -8,7 +8,8 @@
 @media (min-width: 1200px) {
     #title {
         font-size: 100px;
-        margin-top: 15%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 }
 
@@ -24,14 +25,40 @@
         font-size: 85px;
         margin-top: 15%;
     }
+    
 }
-
+@media (min-width: 736px) and (max-width: 1099px) {
+    #par1{
+        margin-left: 40px;
+        position: relative;
+    }
+}
+@media (max-width: 737px) {
+    #par1{
+        margin-left: 20px;
+    }
+}
+@media (min-width: 1100px) {
+    #par1{
+        margin-left: 90px;
+        top: 300px;
+        position: absolute;
+    }
+}
 #title {
     color: yellowgreen;
     transform: rotate(0deg);
     font-family: Consolas, monaco, monospace;
     margin-left: 5%;
     margin-right: 5%;
+}
+#par1{
+    color: yellowgreen; 
+    font-family: Consolas, monaco, monospace;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+
 }
 
 #link {
@@ -92,20 +119,17 @@
 @media (min-width: 1100px) {
     #link {
         grid-template-columns: auto auto auto auto;
+        margin-top: 400px
     }
 }
 
-@media (min-width: 1600px) {
-    #link {
-        position: relative;
-        bottom: 25rem;
-    }
-}
+
 
 @media (min-width: 950px) {
     #link {
         position: relative;
         bottom: 5rem;
+        
     }
 }
 

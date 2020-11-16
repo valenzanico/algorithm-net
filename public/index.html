@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="Algorithm-net, Nicolò Valenz apersona site">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="/favicon.ico">
   <title>Algorithm-net</title>
@@ -14,8 +15,10 @@
 </head>
 
 <body>
+  <a href="/"><img src="logoalgorithmnet512.png" alt="logo" id="logo"></a>
   <p id="title">Algorithm-net</p>
-  <p id="par1"></p>
+  
+  <p id="par1">by Nicolò Valenza</p>
   <div id="link">
     <a href="projects">
       <article id="project">My projects</article>
@@ -30,49 +33,7 @@
       <article id="other">GitHub</article>
     </a>
   </div>
-  <script>
-    const update = () => {
-      caches.delete("algorithm-net-sw-cache-v2").then((text_resp) => console.log(text_resp))//delte cache
-
-      navigator.serviceWorker.getRegistrations()//unregister sw
-        .then(registrations => {
-          registrations.forEach(registration => {
-            registration.unregister()
-          })
-        })
-    };
-    window.addEventListener("beforeunload", (e) => {//quando si chiude la pagiina
-      let d = new Date();
-      let reg = JSON.parse(window.localStorage.getItem("sw-reg"))
-
-      if (window.localStorage.getItem("sw-reg") === null) {//se è la prima volta che viene 
-        window.localStorage.setItem("sw-reg", JSON.stringify({
-          register: true,
-          time: Math.round(d.getTime() / (60 * 60 * 1000)),
-          milliseconds: d.getTime()
-        }))
-      } else if ((Math.round(d.getTime() / (60 * 60 * 1000)) - reg.time) >= 3) {
-        update();
-        let d = new Date();
-        window.localStorage.setItem("sw-reg", JSON.stringify({
-          register: true,
-          time: Math.round(d.getTime() / (60 * 60 * 1000)),
-          milliseconds: d.getTime()
-        }))
-
-      } else {
-        //pass
-      }
-    }, false)
-    if ('serviceWorker' in navigator) {// Check that service workers are supported
-      // Use the window load event to keep the page load performant
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js');
-
-      });
-    }
-    
-  </script>
+  <script src="/sw-manager.js"></script>
 </body>
 
 </html>
