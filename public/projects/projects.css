@@ -22,7 +22,7 @@
     }
 }
 .project1 {
-    padding: 2rem;
+    padding: 1rem;
     border: 5px;
     border-color: white;
     border-radius: 10px;
@@ -30,7 +30,7 @@
     margin: 1rem;
 }
 .project2 {
-    padding: 2rem;
+    padding: 1rem;
     border: 5px;
     border-color: white;
     border-radius: 10px;
@@ -38,7 +38,7 @@
     margin: 1rem;
 }
 .project3 {
-    padding: 2rem;
+    padding: 1rem;
     border: 5px;
     border-color: white;
     border-radius: 10px;
@@ -46,7 +46,7 @@
     margin: 1rem;
 }
 .project4 {
-    padding: 2rem;
+    padding: 1rem;
     border: 5px;
     border-color: white;
     border-radius: 10px;
@@ -54,7 +54,7 @@
     margin: 1rem;
 }
 .project5 {
-    padding: 2rem;
+    padding: 1rem;
     border: 5px;
     border-color: white;
     border-radius: 10px;
@@ -62,13 +62,17 @@
     margin: 1rem;
 }
 .project6 {
-    padding: 2rem;
+    padding: 1rem;
     border: 5px;
     border-color: white;
     border-radius: 10px;
     border-style: solid;
     margin: 1rem;
 }
-button {
+.openbt {
     color: black;
+    padding: 3%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
 }
