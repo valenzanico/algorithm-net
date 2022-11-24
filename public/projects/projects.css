@@ -1,26 +1,38 @@
 * {
     color: white;
 }
+
 .title {
     font-size: 30px;
     font-family: Consolas, monaco, monospace;
     margin-left: 45px;
     margin-top: 30px;
 }
+
 .items {
     padding: 25px;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+article {
+    flex: 30%;
+}
+
+
+/* 
 @media (min-width: 860px) {
     .items {
         grid-template-columns: 50% 50%;
     }
-}
+} */
+
 @media (max-width: 859px) {
-    .items {
-        grid-template-columns: auto;
+    article {
+        flex: 100%;
     }
 }
+
 .project1 {
     padding: 1rem;
     border: 5px;
@@ -29,6 +41,7 @@
     border-style: solid;
     margin: 1rem;
 }
+
 .project2 {
     padding: 1rem;
     border: 5px;
@@ -37,6 +50,7 @@
     border-style: solid;
     margin: 1rem;
 }
+
 .project3 {
     padding: 1rem;
     border: 5px;
@@ -45,6 +59,7 @@
     border-style: solid;
     margin: 1rem;
 }
+
 .project4 {
     padding: 1rem;
     border: 5px;
@@ -52,7 +67,13 @@
     border-radius: 10px;
     border-style: solid;
     margin: 1rem;
+    flex: 100%;
 }
+
+.project4 a {
+    text-decoration: underline !important;
+}
+
 .project5 {
     padding: 1rem;
     border: 5px;
@@ -61,6 +82,7 @@
     border-style: solid;
     margin: 1rem;
 }
+
 .project6 {
     padding: 1rem;
     border: 5px;
@@ -69,6 +91,7 @@
     border-style: solid;
     margin: 1rem;
 }
+
 .project7 {
     padding: 1rem;
     border: 5px;
@@ -77,6 +100,7 @@
     border-style: solid;
     margin: 1rem;
 }
+
 .openbt {
     color: black;
     padding: 12px;

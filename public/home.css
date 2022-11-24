@@ -25,26 +25,29 @@
         font-size: 85px;
         margin-top: 15%;
     }
-    
 }
+
 @media (min-width: 736px) and (max-width: 1099px) {
-    #par1{
+    #par1 {
         margin-left: 40px;
         position: relative;
     }
 }
+
 @media (max-width: 737px) {
-    #par1{
+    #par1 {
         margin-left: 20px;
     }
 }
+
 @media (min-width: 1100px) {
-    #par1{
+    #par1 {
         margin-left: 90px;
         top: 300px;
         position: absolute;
     }
 }
+
 #title {
     color: yellowgreen;
     transform: rotate(0deg);
@@ -52,21 +55,24 @@
     margin-left: 5%;
     margin-right: 5%;
 }
-#par1{
-    color: yellowgreen; 
+
+#par1 {
+    color: yellowgreen;
     font-family: Consolas, monaco, monospace;
     margin-top: 0px;
     margin-bottom: 0px;
-    
-
 }
 
 #link {
     margin-top: 200px;
     text-align: center;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.link-item {
+    flex: 40%;
+}
 
 #project {
     border-radius: 10px;
@@ -78,6 +84,10 @@
     border-style: solid;
     color: white;
     text-decoration: none;
+}
+
+.project {
+    flex: 100%;
 }
 
 #about {
@@ -118,29 +128,19 @@
 
 @media (min-width: 1100px) {
     #link {
-        grid-template-columns: auto auto auto auto;
         margin-top: 400px
     }
 }
-
-
 
 @media (min-width: 950px) {
     #link {
         position: relative;
         bottom: 5rem;
-        
-    }
-}
-
-@media (min-width: 520px) and (max-width: 1099px) {
-    #link {
-        grid-template-columns: auto auto;
     }
 }
 
 @media (max-width: 519px) {
-    #link {
-        grid-template-columns: auto;
+    .link-item {
+        flex: 100%;
     }
 }
