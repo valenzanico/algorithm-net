@@ -1,5 +1,12 @@
-* {
+.my-projects {
     color: white;
+
+    
+}
+.my-projects a {
+    color: white;
+ 
+    text-decoration: underline;
 }
 
 .title {
@@ -70,9 +77,6 @@ article {
     flex: 100%;
 }
 
-.project4 a {
-    text-decoration: underline !important;
-}
 
 .project5 {
     padding: 1rem;
