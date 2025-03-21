@@ -49,7 +49,7 @@
 }
 
 #title {
-    color: yellowgreen;
+    color: #9acd32;
     transform: rotate(0deg);
     font-family: Consolas, monaco, monospace;
     margin-left: 5%;
@@ -57,7 +57,7 @@
 }
 
 #par1 {
-    color: yellowgreen;
+    color: #e70992;
     font-family: Consolas, monaco, monospace;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -80,9 +80,9 @@
     margin: 10px;
     background-color: black;
     border: 5px;
-    border-color: white;
+    border-color: rgb(255, 19, 19);
     border-style: solid;
-    color: white;
+    color: rgb(255, 0, 0);
     text-decoration: none;
 }
 
@@ -96,9 +96,9 @@
     margin: 10px;
     background-color: black;
     border: 5px;
-    border-color: white;
+    border-color: rgb(255, 21, 21);
     border-style: solid;
-    color: white;
+    color: rgb(255, 0, 0);
     text-decoration: none;
 }
 
@@ -108,9 +108,9 @@
     margin: 10px;
     background-color: black;
     border: 5px;
-    border-color: white;
+    border-color: rgb(255, 12, 12);
     border-style: solid;
-    color: white;
+    color: rgb(255, 0, 0);
     text-decoration: none;
 }
 
@@ -120,9 +120,9 @@
     margin: 10px;
     background-color: black;
     border: 5px;
-    border-color: white;
+    border-color: rgb(255, 20, 20);
     border-style: solid;
-    color: white;
+    color: rgb(255, 0, 0);
     text-decoration: none;
 }
 
